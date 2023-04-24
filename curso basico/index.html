@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body> 
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" id="navId" role="tablist">
+    <li class="nav-item">
+        <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">FINCA DON IVAN</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a href="#tab5Id" class="nav-link" data-bs-toggle="tab">Protreros</a>
+    </li>
+    <li class="nav-item" role="presentation">
+        <a href="#" class="nav-link disabled" data-bs-toggle="tab">Ganado</a>
+    </li>
+</ul>
+
+
+<div class="container-fluid my-5">
+    <div class="row">
+
+
+        <div class="col-sm-3">
+
+            <div class="card card-success">
+                <div class="card-header card-title">El llano</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h6 class="text-center"><b>Detalle</b></h6>
+                            <div class="row" style="border-bottom: 1px solid;">
+                                <div class="col-sm-6">
+                                    <div class="row"><small>Area: <span>1920 M</span></small></div>
+                                    <div class="row"><small>Cerramiento: <span>Cerca Electrica</span></small></div>
+                                    <div class="row"><small>Area: <span>1920 M</span></small></div>
+                                    <br>
+                                    <label for="">Ganado</label>
+                                    <div class="row"><small>Cabezas: <span>200</span></small></div>
+                                    <br>
+                                    <label for="">Catastro</label>
+                                    <div class="row"><small>Cerramiento: <span> Electrica</span></small></div>
+                                    <div class="row"><small>Area: <span>1920 M</span></small></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="table-responsive">
+                                        <table class="table table-sm table-bordered border-primary-subtle">
+                                            <thead class="table-success">
+                                                <tr>
+                                                    <th>Pastos</th>
+                                                <th>%</th>
+                                                </tr>
+                                                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><small>braquiaria</small></td>
+                                                    <td><small>10</small></td>
+                                                </tr>
+                                                <tr><td><small>KICULLO</small></td>
+                                                    <td><small>20</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><small>pasto negro</small></td>
+                                                    <td><small>70</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><small>pasto negro</small></td>
+                                                    <td><small>70</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><small>pasto negro</small></td>
+                                                    <td><small>70</small></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <button class="btn btn-danger  btn-sm m-1 form-control" onclick="ver()">Historial</button>
+                                    <button class="btn btn-primary btn-sm m-1" onclick="verpastos()">Pastos</button><br>
+                                    <button class="btn btn-primary btn-sm m-1">Ganado</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+                        
+        
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="historial" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h1 class="modal-title fs-5" id="tipoArchivo">El llano</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="verFile">
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered border-primary-subtle">
+                        <thead class="table-warning">
+                            <tr>
+                                <th>Accion</th>
+                                <th>Fecha</th>
+                                <th>Jornales</th>
+                                <th>Observacion</th>
+                                <th>Costo Total</th>
+                                <th>Proxm. Fecha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td id="sexo">Drenaje</td>
+                            <td id="genero">18/06/2026</td>
+                            <td id="poblacion">3</td>
+                            <td id="poblacion">Maquina</td>
+                            <td id="poblacion">1.500.000</td>
+                            <td id="poblacion">18/06/2027</td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="pastos" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h1 class="modal-title fs-5" id="tipoArchivo">El llano</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="verFile">
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered border-primary-subtle">
+                        <thead class="table-warning">
+                            <tr>
+                                <th>Pasto</th>
+                                <th>Porcentaje</th>
+                                <th>Accion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="sexo">braquiaria</td>
+                                <td id="genero">10%</td>
+                                <td id="poblacion"><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr>
+                                <td id="sexo">pasto negro</td>
+                                <td id="genero">20%</td>
+                                <td id="poblacion"><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                            <tr>
+                                <td id="sexo">kucullo</td>
+                                <td id="genero">70%</td>
+                                <td id="poblacion"><i class="fa-solid fa-pencil"></i> <i class="fa-solid fa-trash-can"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card-footer">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script>
+    function ver() {
+        $("#historial").modal("show");
+    }
+    function verpastos() {
+        $("#pastos").modal("show");
+    }
+  </script>
+
+</body>
+
+</html>
